@@ -1,2 +1,3 @@
 baseurl: /beyondcoding
 exclude: ['README.md']
+permalink: pretty
