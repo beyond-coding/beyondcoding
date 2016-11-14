@@ -1,0 +1,70 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        img {
+            height: 1.6rem;
+        }
+    }
+
+    button {
+        display: inline-block;
+        background: transparent;
+        border: none;
+        outline: none;
+        @media #{$medium-and-up} {
+            display: none;
+        }
+    }
+}
+
+.line-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    .line {
+        margin: 0.5rem 0 0;
+        border-bottom: 1px solid $secondary-color;
+        @media #{$medium-and-up} {
+            width: 96%;
+        }
+    }
+}
+
+header {
+    nav {
+        display: none;
+        @media #{$medium-and-up} {
+            display: block;
+        }
+    }
+
+    ul {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        li {
+            margin-right: 2rem;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                padding-bottom: 0.25rem;
+                color: inherit;
+                border-bottom: 2px solid transparent;
+
+                &:active,
+                &:hover {
+                    border-bottom: 2px solid $primary-color;
+                }
+            }
+        }
+    }
+}

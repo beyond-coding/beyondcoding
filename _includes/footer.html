@@ -1,0 +1,2 @@
+{% assign legal=site.data.pages[page.lang] | where:'ref', 'legal' %}
+<a href="{{ legal[0].url | prepend: site.baseurl }}" class="animsition-link">{{ legal[0].title }}</a>

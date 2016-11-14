@@ -2,14 +2,14 @@
 // engagement animation
 
 var backgroundScale = function() {
-    $('#engagement .background').addClass('scale');
+    $('.engage .background').addClass('scale');
 }
 window.setTimeout(backgroundScale, 0);
 
 var outAnimation = 'animated fadeOutDown';
 var inAnimation = 'animated fadeInDown';
 var animationEvents = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-var highlights = $('#engagement h1 strong');
+var highlights = $('.engage h1 strong');
 
 highlights.not(':first').hide();
 var titleAnimation = function() {

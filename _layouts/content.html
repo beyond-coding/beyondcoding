@@ -2,14 +2,22 @@
 layout: default
 ---
 
-<div class="container">
-  <section class="section">
+<div class="animsition">
+  <div class="menu-overlay-container">
 
-    <header>
-      {% include nav.html navclass='nav-header' logo='logo.png' %}
-    </header>
+    <div class="container">
+      <section class="section">
 
-    {{content}}
+        {% include nav.html logo='logo.png' line='line' %}
 
-  </section>
+        <article>
+            {{content}}
+        </article>
+
+      </section>
+    </div>
+  </div>
+
+  {% include menu.html %}
+
 </div>
