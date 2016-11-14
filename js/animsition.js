@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $(".animsition").animsition({
-    inClass: 'fade-in-up-sm',
+    inClass: 'fade-in-right-sm',
     outClass: 'fade-out',
     inDuration: 1500,
     outDuration: 800,
