@@ -1,5 +1,5 @@
 <nav class="{{ include.navclass }}">
-  <a href="/{{ page.lang | prepend: site.baseurl }}/"><img src="/img/{{include.logo}}" alt="Beyond Coding Logo" /></a>
+  <a href="{{ site.baseurl }}/{{ page.lang }}/"><img src="/img/{{include.logo}}" alt="Beyond Coding Logo" /></a>
   <ul>
     {% assign pages=site.data.pages[page.lang] | where:'show-navigation', true %}
     {% for my_page in pages %}
@@ -10,7 +10,7 @@
     {% assign language_pages=site.pages | where:'ref', page.ref | sort: 'lang' %}
     {% for language_page in language_pages %}
       {% if language_page.lang != page.lang %}
-        <li><a href="{{ language_page.permalink }}" class="{{ language_page.lang }}">{{ site.data.languages[language_page.lang].title }}</a></li>
+        <li><a href="{{ site.baseurl }}{{ language_page.permalink }}" class="{{ language_page.lang }}">{{ site.data.languages[language_page.lang].title }}</a></li>
       {% endif %}
     {% endfor %}
   </ul>
