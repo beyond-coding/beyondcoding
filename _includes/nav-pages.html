@@ -1,7 +1,7 @@
 <ul>
   {% assign pages=site.data.pages[page.lang] | where:'show-navigation', true %}
   {% for my_page in pages %}
-    <li><a href="{{ my_page.url | prepend: site.baseurl }}" class="animsition-link">{{ my_page.title }}</a></li>
+    <li><a href="{{ my_page.url | prepend: site.baseurl }}" class="animsition-link {% if my_page.ref contains page.ref %}active{% endif %}">{{ my_page.title }}</a></li>
   {% endfor %}
 </ul>
 <!-- <ul>

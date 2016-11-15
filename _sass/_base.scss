@@ -5,6 +5,10 @@ html {
     background-color: $background-color;
 }
 
+.top-line {
+  border-bottom: 2px solid $primary-color;
+}
+
 .mobile-only {
     @media #{$medium-and-up} {
         display: none !important;
@@ -12,6 +16,8 @@ html {
 }
 
 article {
+    min-height: 73.7vh;
+
     h3 {
         margin: 1rem 0;
         font-size: 2em;
@@ -42,23 +48,108 @@ article {
             width: 31%;
         }
 
-        &:hover {
-            border: 1px solid $primary-color;
-            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-        }
-
         .logo {
-            .material-icons {
-                font-size: 5em;
-            }
+          .material-icons {
+            font-size: 4em;
+          }
         }
 
         h4 {
             margin: 0.5rem 0 0;
             font-size: 1.3em;
             font-weight: 300;
-            // color: $primary-color;
-            // text-transform: uppercase;
+        }
+
+        &:hover {
+          border: 1px solid $primary-color;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+          .logo {
+            .material-icons {
+              font-size: 4em;
+              text-shadow: 0 2px 5px rgba(0, 0, 0, 0.16);
+            }
+          }
         }
     }
+}
+
+.referral {
+  height: 50px;
+  padding: 5px 0;
+  background-color: rgba(255,255,255,0.5);
+  div {
+
+    a {
+      display: inline-block;
+      width: 100%;
+
+      img {
+        display: block;
+        margin: 0 auto;
+        height: 40px;
+      }
+    }
+  }
+
+}
+
+.contact {
+  // height: 80vh;
+  // margin-top: 2rem;
+
+  .valign-wrapper {
+      position: relative;
+      height: 70vh;
+
+      .valign {
+          width: 100%;
+      }
+  }
+
+  h1, h2 {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 2.1em;
+    font-weight: 300;
+  }
+
+  h2 {
+    font-size: 1.6em;
+    font-weight: 100;
+  }
+
+  .line {
+    border-bottom: 3px solid $primary-color;
+  }
+
+  p {
+    margin-top: 4rem;
+    font-weight: 400;
+    text-align: right;
+
+  }
+
+  .icon {
+    display: inline-block;
+    margin-right: 1rem;
+    &:last-child {
+      margin-right: 0;
+    }
+
+    i {
+      font-size: 3em;
+    }
+
+    &.email {
+      color: $secondary-color;
+    }
+
+    &.linkedin {
+      color: #0177B5;
+    }
+  }
+
 }

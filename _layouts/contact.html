@@ -2,7 +2,23 @@
 layout: content
 ---
 
-<h3>Contact</h3>
-<p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-</p>
+<div class="row">
+  <div class="col s12 push-m6 m6">
+    <div class="contact">
+      <div class="valign-wrapper">
+        <div class="valign">
+          <h1>Guillermo Herrero</h1>
+          <div class="line"></div>
+          <h2>ceo & founder</h2>
+          <p>
+            {% assign subject=site.data.text[page.lang].contact.subject %}
+            <a href="mailto:guillermo.herrero@beyond-coding.com?subject={{subject}}">guillermo.herrero@beyond-coding.com</a>
+            <br /><br />
+            <a class="icon email" href="mailto:guillermo.herrero@beyond-coding.com?subject={{subject}}"><i class="fa fa-envelope-square" aria-hidden="true"></i></a>
+            <a class="icon linkedin" href="http://www.linkedin.com/in/guillermo-herrero" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

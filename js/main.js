@@ -34,62 +34,19 @@ var titleAnimation = function() {
 window.setTimeout(titleAnimation, 1500);
 
 //---------------------------------------------------------------------------------------
-// navigation menu
+// referral activation
 
-// $('#menu').click(function() {
-//     var icon = $(this).children('i');
-//     var text = icon.text();
-//     console.log('icon text: ' + text);
-//     var nextText = 'menu';
-//     if (text === 'menu') {
-//         nextText = 'close';
-//     }
-//     icon.text(nextText);
-// });
-
-
-// $('div.overlay').addClass('close');
-//
-// function openMenu(menu) {
-//     $(menu).removeClass('close');
-//     $(menu).addClass('open');
-//     $('#menu').hide();
-// }
-//
-// function closeMenu(menu) {
-//     $(menu).removeClass('open');
-//     $(menu).addClass('close');
-//     $('.overlay-open').show();
-//     $('#menu').show();
-// }
-//
-// $('.overlay-open').click(function() {
-//     $('.overlay-open').hide();
-//     var element = $(this);
-//     var target = element.attr('data-target');
-//     openMenu(target);
-//     sendCharacterEvent(element);
-//     return false;
-// });
-// $('.overlay-close').click(function() {
-//     var overlay = $(this).closest('.overlay');
-//     closeMenu(overlay);
-//     return false;
-// });
-// $('.overlay-scale nav a').click(function() {
-//     var parent = $(this).parent('.overlay');
-//     closeMenu(parent);
-// });
-// $('.overlay-scale nav a.scroll').click(function() {
-//     var overlay = $(this).closest('.overlay');
-//     closeMenu(overlay);
-//     scrollTo(this.hash);
-//     return false;
-// });
-// $('#menu a.scroll').click(function() {
-//     scrollTo(this.hash);
-//     return false;
-// });
+$('.referral').slick({
+  dots: false,
+  arrows: false,
+  infinite: true,
+  draggable: true,
+  mobileFirst: true,
+  slidesToShow: 1,
+  slidesPerRow: 1,
+  autoplay: true,
+  autoplaySpeed: 2000
+});
 
 //---------------------------------------------------------------------------------------
 // scroll effect
