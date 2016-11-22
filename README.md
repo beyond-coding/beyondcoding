@@ -1,2 +1,2 @@
 # beyondcoding
-Beyond Coding public website
+[obsolete] - Beyond Coding public website
